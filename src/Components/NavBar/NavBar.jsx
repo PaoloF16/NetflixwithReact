@@ -4,7 +4,7 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" bg="dark" variant="dark">
       <Container>
-        asdsadasd
+        aaaa
         <Navbar.Brand href="#home">
           <img src="" alt="" />
         </Navbar.Brand>
