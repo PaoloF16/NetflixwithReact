@@ -41,7 +41,7 @@ export const MovieRow = ({ title = "Trending Now", genreId = "" }) => {
   }
 
   return (
-    <section className="mb-4">
+    <section className="mb-4 w-auto">
       <Container fluid>
         <div className="section-heading px-1">
           <h3 className="mb-0 text-white">{title}</h3>
