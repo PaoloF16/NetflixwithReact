@@ -1,11 +1,12 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { NavBar } from "./Components";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 const App = () => {
   return (
     <>
       <header>
-        <NavBar></NavBar>
+        <NavBar />
       </header>
       <main></main>
       <footer></footer>
