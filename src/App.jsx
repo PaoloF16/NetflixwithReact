@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { NavBar } from "./Components";
+import { NavBar, Hero } from "./Components";
 
 const App = () => {
   return (
@@ -8,7 +8,9 @@ const App = () => {
       <header>
         <NavBar />
       </header>
-      <main></main>
+      <main>
+        <Hero></Hero>
+      </main>
       <footer></footer>
     </>
   );
