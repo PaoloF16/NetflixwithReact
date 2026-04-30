@@ -2,7 +2,7 @@ import { Container, Nav, Navbar, Button, NavDropdown } from "react-bootstrap";
 
 export const NavBar = () => {
   return (
-    <Navbar expand="lg" bg="dark" variant="dark">
+    <Navbar expand="lg" className="netflix-color" variant="dark">
       <Container fluid>
         {/* LOGO */}
         <Navbar.Brand href="#">

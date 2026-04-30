@@ -5,7 +5,7 @@ export const Hero = () => {
     <section className="hero-banner">
       {/* BACKGROUND */}
       <div className="hero-banner-bg">
-        <img src="./public/stranger-things.jpg" alt="Stranger Things banner" />
+        <img src="stranger-things.jpg" alt="Stranger Things banner" />
       </div>
 
       {/* OVERLAY */}
@@ -15,7 +15,7 @@ export const Hero = () => {
       <Container className="hero-banner-content">
         {/* NETFLIX KICKER */}
         <div className="hero-kicker">
-          <img src="./public/netflix-3.svg" alt="" width={200} />
+          <img src="/netflix-3.svg" alt="" width={200} />
         </div>
 
         {/* TITLE */}
@@ -40,7 +40,10 @@ export const Hero = () => {
         {/* ACTIONS */}
         <div className="hero-actions d-flex gap-3">
           {/* PLAY */}
-          <Button className="btn-hero-play d-flex align-items-center justify-content-center">
+          <Button
+            variant="light"
+            className="btn-hero-play d-flex align-items-center justify-content-center"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
@@ -60,16 +63,7 @@ export const Hero = () => {
           </Button>
 
           {/* INFO */}
-          <Button
-            className="btn-hero-info"
-            data-bs-toggle="modal"
-            data-bs-target="#movieModal"
-            data-title="Stranger Things"
-            data-review="A group of kids in Hawkins face supernatural dangers..."
-            data-genre="Fantasy / Sci-Fi"
-            data-year="2022"
-            data-image="/Netflix-images/stranger-things-3840x2160-25038.jpg"
-          >
+          <Button variant="light" className="btn-hero-info">
             More Info
           </Button>
         </div>
