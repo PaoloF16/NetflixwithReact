@@ -1,15 +1,20 @@
-import NavBar from "../../Components/NavBar/NavBar";
+import EditProfile from "../../Components/EditProfile/EditProfile";
 import Footer from "../../Components/Footer/footer";
+import { SimpleHeader } from "../../Components/NavBar/SimpleHeader";
 const ProfilePage = () => {
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
-      <main></main>
-      <footer>
-        <Footer />
-      </footer>
+      <body className="netflix-color">
+        <header>
+          <SimpleHeader></SimpleHeader>
+        </header>
+        <main>
+          <EditProfile></EditProfile>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </body>
     </>
   );
 };

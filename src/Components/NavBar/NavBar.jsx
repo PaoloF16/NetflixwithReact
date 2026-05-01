@@ -7,7 +7,7 @@ const NavBar = () => {
       <Container fluid>
         {/* LOGO */}
         <Navbar.Brand as={Link} to="/" href="#">
-          <img src="/netflix_logo.png" alt="NetflixLogo" width={90} />
+          <img src="/netflix-3.svg" alt="NetflixLogo" width={90} />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
