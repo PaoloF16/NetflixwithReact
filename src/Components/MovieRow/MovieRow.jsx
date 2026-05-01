@@ -5,7 +5,7 @@ const API_KEY = "9a50481df5f7ab65610d958387128aa9";
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
-export const MovieRow = ({ title = "Trending Now", genreId = "" }) => {
+const MovieRow = ({ title = "Trending Now", genreId = "" }) => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -72,3 +72,4 @@ export const MovieRow = ({ title = "Trending Now", genreId = "" }) => {
     </section>
   );
 };
+export default MovieRow;

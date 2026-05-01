@@ -1,11 +1,12 @@
 import { Container, Nav, Navbar, Button, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
     <Navbar expand="lg" className="netflix-color" variant="dark">
       <Container fluid>
         {/* LOGO */}
-        <Navbar.Brand href="#">
+        <Navbar.Brand as={Link} to="/" href="#">
           <img src="/netflix_logo.png" alt="NetflixLogo" width={90} />
         </Navbar.Brand>
 
@@ -14,7 +15,9 @@ export const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           {/* LINKS IZQUIERDA */}
           <Nav className="me-auto">
-            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link as={Link} to="/" href="#">
+              Home
+            </Nav.Link>
             <Nav.Link href="#">Tv Shows</Nav.Link>
             <Nav.Link href="#">Movies</Nav.Link>
             <Nav.Link href="#">Recently Added</Nav.Link>
@@ -64,8 +67,12 @@ export const NavBar = () => {
                 />
               }
             >
-              <NavDropdown.Item href="#">Profile</NavDropdown.Item>
-              <NavDropdown.Item href="#">Settings</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/profile">
+                Profile
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/settings">
+                Settings
+              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#">Logout</NavDropdown.Item>
             </NavDropdown>
@@ -75,3 +82,4 @@ export const NavBar = () => {
     </Navbar>
   );
 };
+export default NavBar;

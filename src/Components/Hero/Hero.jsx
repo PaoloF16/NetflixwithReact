@@ -1,6 +1,6 @@
 import { Container, Button } from "react-bootstrap";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className="hero-banner">
       {/* BACKGROUND */}
@@ -74,3 +74,4 @@ export const Hero = () => {
     </section>
   );
 };
+export default Hero;

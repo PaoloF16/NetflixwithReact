@@ -1,6 +1,6 @@
 import { Container, Dropdown, ButtonGroup, Button } from "react-bootstrap";
 
-export const DropdownMovies = () => {
+const DropdownMovies = () => {
   return (
     <section className="mb-4">
       <Container fluid>
@@ -61,3 +61,4 @@ export const DropdownMovies = () => {
     </section>
   );
 };
+export default DropdownMovies;
