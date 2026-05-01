@@ -4,7 +4,7 @@ import { SimpleHeader } from "../../Components/NavBar/SimpleHeader";
 const ProfilePage = () => {
   return (
     <>
-      <body className="netflix-color">
+      <div className="netflix-color">
         <header>
           <SimpleHeader></SimpleHeader>
         </header>
@@ -14,7 +14,7 @@ const ProfilePage = () => {
         <footer>
           <Footer />
         </footer>
-      </body>
+      </div>
     </>
   );
 };

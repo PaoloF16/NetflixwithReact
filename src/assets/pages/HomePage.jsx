@@ -7,7 +7,7 @@ import Footer from "../../Components/Footer/footer";
 const HomePage = () => {
   return (
     <>
-      <body className="netflix-color">
+      <div className="netflix-color">
         <header>
           <NavBar />
         </header>
@@ -27,7 +27,7 @@ const HomePage = () => {
         <footer>
           <Footer />
         </footer>
-      </body>
+      </div>
     </>
   );
 };

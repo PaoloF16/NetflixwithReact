@@ -543,3 +543,28 @@ img {
     margin-bottom: 1rem;
   }
 }
+.search-box {
+  width: 320px;
+  z-index: 9999;
+}
+
+.search-results {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.search-results .list-group-item {
+  background-color: #181818;
+  color: white;
+  border-color: #333;
+}
+
+.search-results .list-group-item:hover {
+  background-color: #333;
+  color: white;
+}
+
+.movie-modal-content {
+  background-color: #181818;
+  color: white;
+}
