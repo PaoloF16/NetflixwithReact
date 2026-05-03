@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Container, Row, Col, Carousel } from "react-bootstrap";
+import { Container, Row, Col, Carousel, Spinner } from "react-bootstrap";
 
 const API_KEY = "9a50481df5f7ab65610d958387128aa9";
 const BASE_URL = "https://api.themoviedb.org/3";
@@ -7,10 +7,11 @@ const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
 const MovieRow = ({ title = "Trending Now", genreId = "" }) => {
   const [movies, setMovies] = useState([]);
-
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const fetchMovies = async () => {
       try {
+        setLoading(true);
         let url;
 
         if (genreId) {
@@ -28,12 +29,17 @@ const MovieRow = ({ title = "Trending Now", genreId = "" }) => {
         setMovies(data.results || []);
       } catch (error) {
         console.error("Error fetching movies:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchMovies();
   }, [genreId, title]);
 
+  if (loading) {
+    return <Spinner animation="grow" />;
+  }
   const groupedMovies = [];
 
   for (let i = 0; i < movies.length; i += 4) {
