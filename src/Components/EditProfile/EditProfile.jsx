@@ -2,7 +2,7 @@ import { Container, Row, Col, Form, Button, Dropdown } from "react-bootstrap";
 
 const EditProfile = () => {
   return (
-    <Container className="py-5 text-light netflix-color m-2">
+    <Container className="py-5 text-light netflix-color m-2 ">
       <Row className="justify-content-center">
         <Col xs={12} md={10} lg={9}>
           <h1 className="display-2 border-bottom pb-3 mb-4">Edit Profile</h1>

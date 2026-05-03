@@ -9,7 +9,9 @@ const ProfilePage = () => {
           <SimpleHeader></SimpleHeader>
         </header>
         <main>
-          <EditProfile></EditProfile>
+          <div className="d-flex justify-content-center">
+            <EditProfile></EditProfile>
+          </div>
         </main>
         <footer>
           <Footer />
